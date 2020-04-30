@@ -1,0 +1,40 @@
+init:
+  - git config --global core.autocrlf input
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install --production
+matrix:
+  fast_finish: true
+shallow_clone: true
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+  - ps: |
+      if ($env:APPVEYOR_REPO_BRANCH -Match "master") {
+        npm run build:prod
+      }
+      elseif ($env:APPVEYOR_REPO_BRANCH -Match "staging") {
+        npm run build:staging
+      }
+      elseif ($env:APPVEYOR_REPO_BRANCH -Match "dev") {
+        npm run build:dev
+      }
+cache:
+  - '%APPDATA%\npm-cache'
+  - node_modules -> package.json
+before_build:
+  - ps: gci env:*
+
+deploy_script:
+  - ps: $env:package_path = $artifacts.values[0].path
+  - ps: |
+      if ($env:APPVEYOR_REPO_BRANCH -Match "master") {
+        Copy-Item "build\*" -Destination "C:\DPWebProd\" -Recurse -Force
+      }
+      elseif ($env:APPVEYOR_REPO_BRANCH -Match "staging") {
+        Copy-Item "build\*" -Destination "C:\DPWebStaging\" -Recurse -Force
+      }
+      elseif ($env:APPVEYOR_REPO_BRANCH -Match "dev") {
+        Copy-Item "build\*" -Destination "C:\DPWebDev\" -Recurse -Force
+      }

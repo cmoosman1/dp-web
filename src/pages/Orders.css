@@ -1,0 +1,145 @@
+.order-headers {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.63px;
+  line-height: 19px;
+}
+
+.orders-text {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.order-link {
+  color: #008898;
+  float: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.order-link-disabled {
+  color: #008898;
+  float: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+.order-link:hover {
+  color: #43bac3 !important;
+}
+
+.order-label {
+  color: #4a4a4a;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.MuiOutlinedInput-root.Mui-focused {
+  outline: 1px solid #9b9b9b !important;
+}
+
+/* Date picker overrides */
+
+.MuiPickersToolbar-toolbar {
+  height: unset !important;
+  display: none !important;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.MuiPickersDay-daySelected {
+  background-color: #008898 !important;
+}
+
+.MuiIconButton-root {
+  border-radius: unset !important;
+}
+
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: unset !important;
+  height: 42px !important;
+}
+
+.MuiOutlinedInput-inputAdornedStart {
+  margin-top: unset !important;
+  margin-left: unset !important;
+}
+
+.MuiOutlinedInput-adornedStart {
+  padding-left: 0px !important;
+}
+
+/* Invoice Table styling */
+.dropdownTableActionInvoice {
+  height: 0px;
+  position: inherit;
+  margin-top: -12px;
+}
+
+/* Misc Table styling */
+.dropdownTableAction {
+  height: 0px;
+  position: inherit;
+  margin-top: -12px;
+}
+
+.dropdownTableAction-content {
+  min-height: 81px;
+  width: 139px;
+  border: 1px solid #ddddde;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 100;
+  right: 74px;
+  top: 27%;
+  cursor: pointer;
+  padding-left: 13px;
+}
+
+.dropdownTableAction-preview-invoice {
+  padding: 0 10px;
+}
+
+.dropdownTableAction-preview-invoice:hover {
+  width: 100%;
+  background-color: #eff7f8 !important;
+  font-weight: bold;
+}
+
+.dropdownTableAction-content-invoice-table {
+  /* min-height: 81px; */
+  width: fit-content;
+  border: 1px solid #ddddde;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 100;
+  right: 70px;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: left;
+}
+
+*:focus {
+  outline: none;
+}

@@ -1,0 +1,29 @@
+.customer-profile-wrapper {
+  max-width: 100% !important;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.customer-detail-wrapper {
+  height: 1100px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  margin: 15px 15px 0 15px;
+}
+
+.divider-col {
+  max-width: 3px !important;
+}
+
+.customer-details-headers {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+}

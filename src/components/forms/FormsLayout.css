@@ -1,0 +1,135 @@
+.form-wrapper {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.row-wrapper {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  color: #4a4a4a;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+input {
+  background-color: #ffffff;
+  border: 0.5px solid #9b9b9b;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.1875em !important;
+  letter-spacing: 0.00938em !important;
+}
+
+input:disabled {
+  background: #f2f2f2;
+  color: #9b9b9b;
+}
+
+select {
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #9b9b9b;
+  background-color: #ffffff;
+}
+.customer-logo {
+  float: left;
+  margin-top: 9px;
+  max-height: 60px;
+  max-width: 60px;
+}
+
+/* Style the artificial checkbox */
+label span {
+  height: 24px;
+}
+
+.top-spacer {
+  padding-top: 33px;
+}
+
+/* Materui overides */
+.MuiSelect-select {
+  cursor: pointer;
+  border-radius: 0;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  width: 100% !important;
+  border: 1px solid #9b9b9b;
+  background-color: #ffffff;
+  height: 30px !important;
+}
+
+.MuiSelect-select.MuiSelect-select {
+  padding-right: unset !important;
+}
+
+.MuiOutlinedInput-input {
+  padding: unset !important;
+}
+
+.MuiOutlinedInput-input {
+  margin-top: 12px !important;
+  margin-left: 10px !important;
+}
+
+.MuiTab-wrapper {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.Mui-disabled {
+  background: #f2f2f2;
+  color: #9b9b9b;
+}
+
+.Mui-disabled .MuiCheckbox-root .MuiIconButton-label {
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: #f2f2f2 !important;
+}
+
+.Mui-disabled .MuiIconButton-label svg {
+  color: #9b9b9b !important;
+}
+
+.Mui-disabled .MuiInputBase-input {
+  color: #9b9b9b !important;
+}
+
+.input-checkbox .Mui-disabled {
+  background: white;
+}
+
+.input-checkbox .MuiButtonBase-root {
+  background: white !important;
+}
+
+
+.input-checkbox .Mui-disabled .MuiSvgIcon-root {
+  color: #9b9b9b;
+} 
+
+.sm-date-input .MuiButtonBase-root {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sm-date-input .MuiInputAdornment-positionStart {
+  margin-right: 0;
+}
+
+.sm-date-input .MuiOutlinedInput-adornedStart {
+  padding-left: 2px;
+}
